@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w",
+    "watch": "nodemon -e scss -x",
+    "dev": "node-sass --watch scss --output css"
   },
   "author": "Quentin",
   "license": "ISC",
